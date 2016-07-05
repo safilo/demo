@@ -54,10 +54,13 @@
     <div class="drag" style="top:0px;left:200px;" ">弹</div>
     <div class="drag" style="top:100px;left:300px ">拖</div>
     <div class="drag" style="top:200px;left:200px ">弹</div>
+    <script type="text/javascript" src="js/fastClick.js "></script>
     <script type="text/javascript" src="js/event.js "></script>
     <script type="text/javascript" src="js/drag.js "></script>
     <script type="text/javascript" src="js/elastic-potential-energy.js "></script>
     <script>
+    FastClick.attach(document.body);  //移动端点击拖拽事件兼容解决插件
+
     var aDivs = document.getElementsByTagName("div");
     for(var i = 0,len = aDivs.length;i< len;i++) {
     	new Drag(aDivs[i]);
