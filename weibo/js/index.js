@@ -231,7 +231,7 @@ utils.on(document, "click", function(ev) {
         }
 
         utils.prepend(commentUL, curList)
-        curTextarea.value = null;
+        curTextarea.value = "";
         aSelectFaces = [];
 
     }
@@ -412,7 +412,7 @@ utils.on(rlsSubmitBtn, "click", function(ev) {
     utils.getByClass(curWrap, "host-comment-count")[0].parentNode.setAttribute("rid", utils.children(container).length + 1);
     utils.getByClass(curWrap, "host-praise-count")[0].innerHTML = "赞";
     utils.prepend(container, curWrap);
-    curTextarea.value = null;
+    curTextarea.value = "";
     aSelectFaces = [];
 
 });
