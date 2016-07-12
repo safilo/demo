@@ -239,7 +239,7 @@ this就是谁**
 
 ### 面试题  1  
 
-1. 预解释毫无节操-自执行函数  
+1.  预解释毫无节操-自执行函数  
 
 ```
 f=function(){return true};
@@ -253,7 +253,7 @@ g=function(){return false};
 alert(f());
 alert(g());
 ```
-2. 自执行函数的预解释  
+2.  自执行函数的预解释  
 
 ```
 (function f(){
